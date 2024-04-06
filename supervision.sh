@@ -21,9 +21,9 @@ while IFS= read -r KEY; do
       echo "Starting the process for key: ${KEY:0:8}..."
       RPC_URL=${RPC_URLS[$RANDOM % ${#RPC_URLS[@]}]}
       echo "Using RPC URL: ${RPC_URL}"
-      SLEEP_TIME=$((RANDOM % 11))
-      echo "Sleeping for ${SLEEP_TIME} seconds before starting...❤️"
-      sleep $SLEEP_TIME
+      # SLEEP_TIME=$((RANDOM % 11))
+      # echo "Sleeping for ${SLEEP_TIME} seconds before starting...❤️"
+      # sleep $SLEEP_TIME
       # Execute the command in background
       "./target/release/ore" --rpc ${RPC_URL} --keypair "${KEY}" --priority-fee ${FEE} mine --threads ${THREADS} &
       
