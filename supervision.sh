@@ -5,7 +5,7 @@
 
 RPCS_FILE="./rpcs.txt"
 KEYS_FILE="./keys.txt"
-DEFAULT_FEE=100000
+DEFAULT_FEE=1000000
 DEFAULT_THREADS=4
 mapfile -t RPC_URLS < "$RPCS_FILE"
 # Assign arguments with defaults
