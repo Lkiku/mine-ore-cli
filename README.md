@@ -21,5 +21,15 @@ cargo build --release
 ./supervision.sh
 ```
 
+If you have tmux, you can use this multiple run. If not, you can also install it. 
+```sh
+sudo apt-get install tmux
+```
+
+**multiple run:**
+```sh
+bash run.sh
+```
+
 This will start Ore CLI using the specified configuration.
 
